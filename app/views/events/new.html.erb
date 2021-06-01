@@ -1,0 +1,12 @@
+<h1>New Event</h1>
+
+<%= form_for :event do |f| %>
+  Title       : <%= f.text_field :title %><br />
+  Description : <%= f.text_area :description %><br />
+  Start       : <%= f.datetime_select :start_date %><br />
+  End         : <%= f.datetime_select :end_date %><br />
+  Venue       : <%= f.text_field :venue %><br />
+  Location    : <%= f.text_field :location %><br />
+   
+  <%= f.submit %>
+<% end %>
